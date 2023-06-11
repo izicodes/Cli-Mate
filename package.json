@@ -1,13 +1,18 @@
 {
-  "name": "cli-mate",
+  "name": "cli-mate-tool",
   "version": "1.0.0",
   "description": " Cli-Mate, your trusty weather companion in the command-line world! 🌤️",
   "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "weather",
+    "temperature",
+    "fun cli tool",
+    "CLI tool"
+  ],
+  "author": "xiacodes",
   "license": "ISC",
   "bin": {
     "cli-mate": "src/main.js"

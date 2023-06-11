@@ -1,7 +1,5 @@
 <h1 align=center> 🌞 Cli-Mate 🌦️ </h1>
 
-<!-- ![image](screenshot.jpg) -->
-
 ## ☆ Introduction
 
 <p align=justify>Cli-Mate harnesses the power of <a href="#">OpenWeatherMap</a>, a remarkable weather API, to provide you with accurate and reliable weather data. The CLI interface is built using the incredible commander package, ensuring a seamless and user-friendly experience. And thanks to the magic of axios, making API requests has never been easier.</p>
@@ -13,14 +11,18 @@
 1. Open your terminal or command prompt.
 2. Run the following command to install [Cli-Mate from npmjs.com](https://www.npmjs.com/~xiacodes):
 ``` bash
-npm i -g xiacodes-business-card
+npm i cli-mate-tool
 ```
 > This command will globally install Cli-Mate, allowing you to use it from anywhere in your terminal.
-3. Once the installation is complete, you can start using Cli-Mate by running the CLI command followed by the desired location:
+3. Once the installation is complete, you can start using Cli-Mate by running the CLI command followed by the desired command:
 ``` bash
-cli-mate [location]
+cli-mate max-min-temps
 ```
-> Replace [location] with the desired location for which you want to fetch the weather information.
+> To get the maximum and minimum temperature, run the following command
+``` bash
+cli-mate sun-info
+```
+> To get information about the sun setting and rising times, run the following command
 
 <p align=justify>Enjoy your weather adventures with Cli-Mate! ☀️🌦️⛅🌧️🌈</p>
 
