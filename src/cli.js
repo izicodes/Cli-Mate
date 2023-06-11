@@ -12,7 +12,9 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-// 2. Function finds the city's latitude and longitude
+
+
+// 1. Function finds the city's latitude and longitude
 function findLatLon() {
   axios
     .get("https://api.opencagedata.com/geocode/v1/json", {
@@ -28,15 +30,17 @@ function findLatLon() {
       console.log(`Latitude: ${latitude}`);
       console.log(`Longitude: ${longitude}`);
 
-      rl.close(); // Close the readline interface after retrieving the latitude and longitude
+      // Close the readline interface after retrieving the latitude and longitude
+      rl.close();
     })
     .catch((error) => {
       console.error("Error:", error.message);
-      rl.close(); // Close the readline interface in case of error
+      // Close the readline interface in case of error
+      rl.close();
     });
 }
 
-// 1. Ask the user to enter the city name
+// 2. Ask the user to enter the city name
 rl.question("Enter the city you live in: ", (input) => {
   cityName = input;
   //   console.log(`City: ${cityName}`);
@@ -47,13 +51,3 @@ rl.question("Enter the city you live in: ", (input) => {
     findLatLon();
   });
 });
-
-// program.command("cli-mate");
-
-// // Define subcommands for different functionalities
-// program.command("fetch");
-
-// // Integrate with OpenWeatherMap API
-//
-
-//
