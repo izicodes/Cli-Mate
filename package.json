@@ -9,6 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bin": {
+    "cli-mate": "src/cli.js"
+  },
   "dependencies": {
     "axios": "^1.4.0",
     "commander": "^10.0.1"
