@@ -2,6 +2,7 @@
 // Variables
 const { program } = require("commander");
 const mainFunc = require("./weather-functions.js");
+// const findTemp = require("./weather-functions.js");
 
 // ------------------------------------------ //
 
@@ -9,20 +10,22 @@ let rain = "｀、ヽ｀ヽ";
 console.log("\n" + rain + " Cli-Mate " + rain);
 console.log("\n     ❆ ---------------- ❆\n");
 
-program
-  .command("hello")
-  .description("Prints a greeting message")
-  .action(() => {
-    console.log("Hello, world!");
-  });
+// ------------------------------------------ //
 
 program
-  .command("max")
+  .command("max-min-temp")
   .description(
     "Displays the maximum and minimum temperatures of the day of a city"
   )
   .action(() => {
-    mainFunc(); // Call the main function when the 'max' command is executed
+    mainFunc(1);
+  });
+
+program
+  .command("sun-info")
+  .description("Fetches the sun information of the day of a city")
+  .action(() => {
+    mainFunc(2);
   });
 
 program.parse(process.argv);
