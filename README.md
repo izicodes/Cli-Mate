@@ -9,7 +9,7 @@
 <p align=justify>By installing Cli-Mate from npmjs.com, you can effortlessly get access to the CLI tool and explore its weather-fetching capabilities.</p>
 
 1. Open your terminal or command prompt.
-2. Run the following command to install [Cli-Mate from npmjs.com](https://www.npmjs.com/~xiacodes):
+2. Run the following command to install [Cli-Mate from npmjs.com](https://www.npmjs.com/package/cli-mate-tool?activeTab=readme):
 ``` bash
 npm i cli-mate-tool
 ```
