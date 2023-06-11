@@ -40,17 +40,17 @@ function findLatLon() {
       rl.close();
     });
 }
+function main() {
+  // 2. Ask the user to enter the city name
+  rl.question("Enter the city you live in: ", (input) => {
+    cityName = input;
 
-// 2. Ask the user to enter the city name
-rl.question("Enter the city you live in: ", (input) => {
-  cityName = input;
-
-  rl.question("Enter the country you live in: ", (input) => {
-    countryName = input;
-    findLatLon();
+    rl.question("Enter the country you live in: ", (input) => {
+      countryName = input;
+      findLatLon();
+    });
   });
-});
-
+}
 function findTemp() {
   axios
     .get("https://api.open-meteo.com/v1/forecast?", {
@@ -68,8 +68,9 @@ function findTemp() {
 
       // console.log(response.data); << -- This is to test if the data is correct
 
-      console.log(`Max Temperature: ${maxTemp}°C`);
-      console.log(`Min Temperature: ${minTemp}°C`);
+      console.log(`\nIn ${cityName}, ${countryName}:\n`);
+      console.log(` - Max Temperature: ${maxTemp}°C`);
+      console.log(` - Min Temperature: ${minTemp}°C`);
 
       // Close the readline interface after retrieving the temperature data
       rl.close();
@@ -80,3 +81,5 @@ function findTemp() {
       rl.close();
     });
 }
+
+module.exports = main;
