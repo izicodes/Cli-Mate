@@ -7,12 +7,12 @@
 <hr>
 
 ## Table of Content
-- [Installation](https://gitlab.com/xiacodes/Cli-Mate#-installation)
-- [The commands](https://gitlab.com/xiacodes/Cli-Mate#-the-commands)
-    - [max-min-temps](https://gitlab.com/xiacodes/Cli-Mate#max-min-temps)
-    - [sun-info](https://gitlab.com/xiacodes/Cli-Mate#sun-info)
-- [Contributing](https://gitlab.com/xiacodes/Cli-Mate#-contributing)
-- [Contact](https://gitlab.com/xiacodes/Cli-Mate#-contact)
+- [Installation](https://github.com/xiacodes/Cli-Mate#-installation)
+- [The commands](https://github.com/xiacodes/Cli-Mate#-the-commands)
+    - [max-min-temps](https://github.com/xiacodes/Cli-Mate#max-min-temps)
+    - [sun-info](https://github.com/xiacodes/Cli-Mate#sun-info)
+- [Contributing](https://github.com/xiacodes/Cli-Mate#-contributing)
+- [Contact](https://github.com/xiacodes/Cli-Mate#-contact)
 
 ## ☆ Installation
 
